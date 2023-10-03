@@ -1,24 +1,30 @@
 #guess the number
 import random
 import string
+a=0
 nums=random.choice(list(range(0,101)))
-a=int(input("guess a number:\n"))
 def numm(a):
     while (a!=nums):
         a=int(input("Enter a number: \n"))
         if (nums-a ==0):
             print("congrats")
             exit(0)
-        elif (nums-a<10 and nums-a>0):
+        elif (nums-a == -10):
+            print("Think higher")
+            continue
+        elif (nums-a<15 and nums-a>0):
             print("A bit low")
             continue
-        elif (nums-a>10 ):
+        elif (nums-a== 10):
+            print("Think Higher")
+            continue
+        elif (nums-a>15 ):
             print("Too low")
             continue
-        elif (nums-a< -10):
+        elif (nums-a< -15):
             print('Too high')
             continue
-        elif (nums-a> -10 and nums-a <0):
+        elif (nums-a> -15 and nums-a <0):
             print("A bit high")
             continue
         else:
