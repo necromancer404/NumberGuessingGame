@@ -2,7 +2,6 @@
 import random
 import string
 nums=random.choice(list(range(0,101)))
-print(nums)
 a=int(input("guess a number:\n"))
 def numm(a):
     while (a!=nums):
