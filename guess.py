@@ -9,22 +9,22 @@ def numm(a):
         if (nums-a ==0):
             print("congrats")
             exit(0)
-        elif (nums-a == -10):
+        elif (nums-a <-10 and nums-a > -20):
             print("Think higher")
             continue
-        elif (nums-a<15 and nums-a>0):
+        elif (nums-a<10 and nums-a>0):
             print("A bit low")
             continue
-        elif (nums-a== 10):
+        elif (nums-a>10 and nums-a <20):
             print("Think Higher")
             continue
-        elif (nums-a>15 ):
+        elif (nums-a>20 ):
             print("Too low")
             continue
-        elif (nums-a< -15):
+        elif (nums-a< -20):
             print('Too high')
             continue
-        elif (nums-a> -15 and nums-a <0):
+        elif (nums-a> -10  and nums-a <0):
             print("A bit high")
             continue
         else:
